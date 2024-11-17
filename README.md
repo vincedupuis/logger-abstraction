@@ -1,4 +1,26 @@
-# Usage
+# Logger Abstraction
+
+A lightweight C++ logging abstraction library designed to seamlessly integrate with various logging frameworks. The library provides a flexible and extensible interface, allowing you to easily switch between different logging backends (e.g., spdlog, Boost.Log, custom implementations) without modifying your core code.
+
+## Features
+- **Plug-and-Play Design**: Quickly integrate with existing logging solutions.
+- **Flexible Interface**: Consistent API for different logging backends.
+- **Minimal Overhead**: Lightweight and efficient, ideal for performance-critical applications.
+- **Extensible**: Easily add support for additional logging libraries.
+
+## Example
+```cpp
+#include "ILogger.h"
+
+int main()
+{
+    logINFO("Hello, {}. Are you {} years old only?!?", "Vincent", 50);
+
+    return 0;
+}
+```
+
+# Demo
 
 ## Using dev container
 ```
