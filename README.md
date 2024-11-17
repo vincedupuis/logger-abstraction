@@ -48,6 +48,5 @@ cmake --build --preset conan-debug
 conan install . --build missing --settings "&:build_type=Debug" --settings build_type=Release
 cmake --preset conan-debug
 cmake --build --preset conan-debug
-.\build\Debug\logger.exe
+./build/Debug/logger
 ```
-
